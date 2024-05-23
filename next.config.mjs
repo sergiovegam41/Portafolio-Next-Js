@@ -1,8 +1,14 @@
 import { withSentryConfig } from "@sentry/nextjs";
+import dotenv from "dotenv";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-const envPath = path.resolve(__dirname, ".env.sentry-build-plugin");
-const envConfig = dotenv.config({ path: envPath }).parsed;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const envConfig = dotenv.config({
+  path: path.resolve(__dirname, ".env.sentry-build-plugin"),
+}).parsed;
 
 const SentryWebpackPluginOptions = {
   authToken: "envConfig.SENTRY_AUTH_TOKEN",
