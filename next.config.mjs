@@ -1,6 +1,19 @@
 import { withSentryConfig } from "@sentry/nextjs";
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
+const envPath = path.resolve(__dirname, ".env.sentry-build-plugin");
+const envConfig = dotenv.config({ path: envPath }).parsed;
+
+const SentryWebpackPluginOptions = {
+  authToken: "envConfig.SENTRY_AUTH_TOKEN",
+  org: "tu_organizacion_en_sentry",
+  project: "portafolio-nextjs",
+  options: {
+    telemetry: false,
+  },
+};
+
+module.exports = withSentryConfig({}, SentryWebpackPluginOptions);
 
 export default withSentryConfig(
   withSentryConfig(withSentryConfig(nextConfig, {})),
