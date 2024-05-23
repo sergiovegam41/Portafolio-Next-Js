@@ -19,7 +19,7 @@ export default function WordRotate({
     initial: { opacity: 0, y: -50 },
     animate: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: 50 },
-    transition: { duration: 0.65, ease: "easeOut" },
+    transition: { duration: 0.55, ease: "easeOut" },
   },
   className,
   textColor = "black", // Valor predeterminado del color del texto
