@@ -3,12 +3,6 @@ import { env } from "process";
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-};
-
 export default withSentryConfig(nextConfig, {
   // Opciones de configuración de Sentry
   org: "asimpl3-hero",
