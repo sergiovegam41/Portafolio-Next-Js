@@ -1,4 +1,5 @@
 import { withSentryConfig } from "@sentry/nextjs";
+import { env } from "process";
 /**
  * @type {import('next').NextConfig}
  */
@@ -18,7 +19,6 @@ export default withSentryConfig(nextConfig, {
   hideSourceMaps: true,
   disableLogger: true,
   automaticVercelMonitors: true,
-  telemetry: false,
   silent: true,
-  authToken: process.env.NEXT_PUBLIC_SENTRY_AUTH_TOKEN,
+  telemetry: false,
 });
