@@ -6,7 +6,7 @@ const nextConfig = {
   /* config options here */
 };
 
-export default withSentryConfig {
+export default withSentryConfig(nextConfig, {
   // Opciones de configuración de Sentry
   org: "asimpl3-hero",
   project: "portafolio-nextjs",
@@ -16,4 +16,4 @@ export default withSentryConfig {
   hideSourceMaps: true,
   disableLogger: true,
   automaticVercelMonitors: true,
-};
+});
