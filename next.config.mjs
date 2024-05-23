@@ -1,7 +1,12 @@
 import { withSentryConfig } from "@sentry/nextjs";
-import nextConfig from "./next.config";
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  /* config options here */
+};
 
-export default withSentryConfig(nextConfig, {
+export default withSentryConfig {
   // Opciones de configuración de Sentry
   org: "asimpl3-hero",
   project: "portafolio-nextjs",
@@ -11,4 +16,4 @@ export default withSentryConfig(nextConfig, {
   hideSourceMaps: true,
   disableLogger: true,
   automaticVercelMonitors: true,
-});
+};
