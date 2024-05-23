@@ -84,31 +84,36 @@ export const testimonials = [
     quote:
       "Responsible for implementing the visual elements that users interact with in our web applications. Worked closely with the design team to translate UI/UX designs into code and will collaborate with backend developers to integrate frontend components with logic. server side.",
     name: "-Frontend Development:",
-    title: "",
+    title:
+      "“Design is not just what it looks and feels like. Design is how it works.”",
   },
   {
     quote:
       "Responsible for designing, implementing and maintaining server-side logic and databases for our web applications. Worked closely with frontend developers to integrate frontend components with backend services and collaborated with other members of the development team to ensure smooth application performance.",
     name: "-Backend Development:",
-    title: "",
+    title:
+      "“To understand recursion you have to understand what recursion is.”",
   },
   {
     quote:
       "Responsible for designing the software architecture for our applications, guaranteeing the scalability, security and efficiency of the system. I work closely with development teams to define architectural standards and patterns, as well as oversee the implementation of technical solutions.",
     name: "-Software Architecture:",
-    title: "",
+    title:
+      "“It's not about bits, bytes and protocols, but about profits, losses and margins.”",
   },
   {
     quote:
       "Responsible for managing version control using Git, ensuring the integrity and traceability of the project's source code. I work collaboratively with the development team to establish and maintain efficient workflows, manage code branches, and perform merges and conflict resolutions effectively.",
     name: "-Git version control:",
-    title: "",
+    title:
+      "“Good programmers know what to write. The great ones know what to rewrite and reuse.”",
   },
   {
     quote:
       "Responsible for leading or coordinating development teams using the agile Scrum methodology. I work closely with stakeholders to prioritize and plan project iterations, as well as facilitate daily stand-up, sprint planning, sprint review, and sprint retrospective meetings.",
     name: "-Agile Scrum methodology:",
-    title: "",
+    title:
+      "“Programming is not about what you know; try what you can find out.”",
   },
 ];
 

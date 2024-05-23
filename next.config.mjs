@@ -1,10 +1,14 @@
 import { withSentryConfig } from "@sentry/nextjs";
-import { env } from "process";
 /**
  * @type {import('next').NextConfig}
  */
+
+const nextConfig = {
+  // Configuración de Next.js
+};
+
 export default withSentryConfig(nextConfig, {
-  // Opciones de configuración de Sentry
+  // Sentry Config
   org: "asimpl3-hero",
   project: "portafolio-nextjs",
 
