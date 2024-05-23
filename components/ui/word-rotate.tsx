@@ -7,9 +7,9 @@ import { useEffect, useState } from "react";
 interface WordRotateProps {
   words: string[];
   duration?: number;
-  framerProps?: HTMLMotionProps<"h1">;
+  framerProps?: HTMLMotionProps<"h2">;
   className?: string;
-  textColor?: string; // Nueva prop para el color del texto
+  textColor?: string;
 }
 
 export default function WordRotate({
@@ -22,7 +22,7 @@ export default function WordRotate({
     transition: { duration: 0.55, ease: "easeOut" },
   },
   className,
-  textColor = "black", // Valor predeterminado del color del texto
+  textColor = "black",
 }: WordRotateProps) {
   const [index, setIndex] = useState(0);
 
@@ -42,7 +42,7 @@ export default function WordRotate({
           key={words[index]}
           className={cn(className)}
           {...framerProps}
-          style={{ color: "rgb(203 172 249)" }} // Establece el color del texto
+          style={{ color: "rgb(203 172 249)" }}
         >
           {words[index]}
         </motion.h1>

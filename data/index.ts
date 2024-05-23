@@ -67,16 +67,6 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
-  {
-    id: 7,
-    title: "Tech",
-    description: "Last Technology",
-    className: "md:col-span-full md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "",
-    spareImg: "/grid.svg",
-  },
 ];
 
 export const testimonials = [
