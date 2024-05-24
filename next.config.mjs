@@ -1,5 +1,5 @@
 import { withSentryConfig } from "@sentry/nextjs";
-// import { env } from "process";
+
 /**
  * @type {import('next').NextConfig}
  */
