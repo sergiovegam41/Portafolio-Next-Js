@@ -1,4 +1,6 @@
 import { withSentryConfig } from "@sentry/nextjs";
+import { env } from "process";
+
 /**
  * @type {import('next').NextConfig}
  */
@@ -11,7 +13,7 @@ export default withSentryConfig(nextConfig, {
   // Sentry Config
   org: "asimpl3-hero",
   project: "portafolio-nextjs",
-
+  authToken: process.env.NEXT_PUBLIC_SENTRY_AUTH_TOKEN,
   widenClientFileUpload: true,
   transpileClientSDK: true,
   hideSourceMaps: true,
